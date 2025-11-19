@@ -9,3 +9,8 @@ func()       // function
 struct
 array [N]T
 int, string, bool, float64, etc.
+
+# Buffered Channel KHÔNG block luồng chính 
+channel := make(chan int, 3)
+# Unbuffered Channel BLOCK luồng chính
+ channel := make(chan int)
